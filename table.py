@@ -24,6 +24,9 @@ def my_timetable_all(username):
             return text
 
 def my_timetable_continue(username):
+    dt = datetime.datetime.now()
+    today = dt.date()
+    time = dt.time()
     text = ''
     index = 0
     # if (today != '2024-10-09' and today != '2024-10-10') or (today == '2024-10-09' and time < datetime.time(9,30,0)):
@@ -47,6 +50,9 @@ def my_timetable_continue(username):
             return text
 
 def my_timetable_now(username):
+    dt = datetime.datetime.now()
+    today = dt.date()
+    time = dt.time()
     text = ''
     # if (today != '2024-10-09' and today != '2024-10-10') or (today == '2024-10-09' and time < datetime.time(9,30,0)):
     #     text = 'Посвят ещё не начался!\n'
